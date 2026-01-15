@@ -1,0 +1,6 @@
+public int lastDigitOf(int input){
+if(input1>=0)
+return(input1%10);
+else if(input1<0)
+return(-1*(input1%10));
+}
