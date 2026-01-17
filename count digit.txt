@@ -1,0 +1,8 @@
+int digit;
+int count=0;
+while(input1!=0){
+digit=input1%10;
+count++;
+input1=input1/10;
+}
+return(count);
