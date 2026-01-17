@@ -1,0 +1,25 @@
+ int even=0;
+      int odd=0;
+      if(n1%2==0)
+      even++;
+      else if(n1%2!=0)
+      odd++;
+      if(n2%2==0)
+      even++;
+      else if(n2%2!=0)
+      odd++;
+      if(n3%2==0)
+      even++;
+      else if(n3%2!=0)
+      odd++;
+      if(n4%2==0)
+      even++;
+      else if(n4%2!=0)
+      odd++;
+
+      if(input5.equals("even"))
+      return(even);
+      else if(input5.equals("odd"))
+      return(odd);
+    
+         return 0;
