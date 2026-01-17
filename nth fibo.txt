@@ -1,0 +1,9 @@
+int v1=0;
+int v2=1;
+int result=0;
+for(int i=1;i<=n-2;i++){
+result=v1+v2;
+v1=v2;
+v2=result;
+}
+return(result);
