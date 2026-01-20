@@ -1,0 +1,18 @@
+int count=0;
+int num=1;
+
+while(count<input1){
+num++;
+Boolean isPrime=true;
+
+for(int i=2;i<=Math.sqrt(num);i++){
+if(num%i==0){
+isPrime==false;
+break;
+}
+}
+
+if(num>1 && isPrime)
+num++;
+}
+return(num);
