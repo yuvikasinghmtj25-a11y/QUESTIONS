@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+ class UserMainCode
+{
+ public int uniqueDigitsCount(int input1){
+ int digit;
+ int count=0;
+ int[] arr=new int[10];
+  while(input1!=0){
+     digit=input1%10;
+      arr[digit]=1;
+      input1=input1/10;
+  }
+    for(int i=0;i<10;i++){
+     if(arr[i]==1)
+        count++;
+ } 
+  return(count);
+}
