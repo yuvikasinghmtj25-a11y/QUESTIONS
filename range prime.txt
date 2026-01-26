@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+
+class UserMainCode
+{
+    public int countPrimesInRange(int input1, int input2){
+
+        int primeCount = 0;
+
+        for(int num = input1; num <= input2; num++){
+            int factor = 0;
+
+            for(int i = 1; i <= num; i++){
+                if(num % i == 0)
+                    factor++;
+            }
+
+            if(factor == 2)
+                primeCount++;
+        }
+
+        return primeCount;
+    }
+}
+
