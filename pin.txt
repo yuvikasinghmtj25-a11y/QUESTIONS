@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+class UserMainCode
+{
+
+    public int createPIN(int input1,int input2,int input3){
+        int u = Math.min(input1%10, Math.min(input2%10, input3%10));
+        int t = Math.min((input1/10)%10, Math.min((input2/10)%10, (input3/10)%10));
+        int h = Math.min(input1/100, Math.min(input2/100, input3/100));
+
+        int maxDigit=0;
+        int[] nums={input1,input2,input3};
+        for(int i=0; i<nums.length; i++){
+            int num=nums[i];
+            while(num!=0){
+                maxDigit = Math.max(maxDigit, num%10);
+                num = num/10;
+            }
+        }
+        int pin = maxDigit*1000 + h*100 + t*10 + u;
+        return pin;
+    }
+}
