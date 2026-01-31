@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+class UserMainCode
+{
+
+public int isPalindrome(String input1){
+Boolean isPalindrome=true;
+input1=input1.toLowerCase();
+char[] arr=input1.toCharArray();
+for(int i=0;i<arr.length/2;i++){
+if(arr[i]!=arr[arr.length-1-i]{
+isPalindrome=false;
+break;
+}
+}
+if(isPalindrome)
+return(2);
+else
+return(1);
+}
+}
